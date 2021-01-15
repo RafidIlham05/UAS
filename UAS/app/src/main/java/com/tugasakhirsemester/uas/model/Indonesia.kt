@@ -7,3 +7,4 @@ data class Indonesia(
     val meninggal: String,
     val dirawat: String
 )
+// berisi variabel dari api
