@@ -23,7 +23,7 @@ class ProvinceAdapter(private var list: ArrayList<ProvinceResponse>): RecyclerVi
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProvinceViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_province, parent, false)
         return ProvinceViewHolder(view)
-
+        // untuk membuat tampilan dari data
     }
 
     override fun getItemCount(): Int = list.size
