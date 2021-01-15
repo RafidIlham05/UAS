@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun showIndonesia(){
+    private fun showIndonesia(){ // untuk menampilkan data
         Client.instance.getIndonesia().enqueue(object :
             Callback<ArrayList<Indonesia>> {
 
@@ -42,7 +42,9 @@ class MainActivity : AppCompatActivity() {
                 val hospitilized = indonesia?.dirawat
                 val recover = indonesia?.sembuh
                 val death = indonesia?.meninggal
-
+                
+                // berisi variable yang akan menampung nilai – niali yang akan dipanggil
+                
                 tvPositive.text = positive
                 tvHospitalized.text = hospitilized
                 tvRecover.text = recover
