@@ -12,4 +12,4 @@ data class Province(
     val recover: Int,
     @SerializedName("Kasus_Meni")
     val death: Int
-)
+) // berisi variabel dari api, menggunakan SerializedName karena pada api menggunakan awal huruf kapital dan tidak sesuai kaidah kothlin
