@@ -19,13 +19,13 @@ class ProvinceActivity : AppCompatActivity() {
         showProvince()
     }
 
-    private fun showProvince() {
+    private fun showProvince() { // untuk menampilkan data
         rvProvince.setHasFixedSize(true)
         rvProvince.layoutManager = LinearLayoutManager(this)
 
         Client.instance.getProvince().enqueue(object : Callback<ArrayList<ProvinceResponse>>{
 
-            override fun onFailure(call: Call<ArrayList<ProvinceResponse>>, t: Throwable) {
+            override fun onFailure(call: Call<ArrayList<ProvinceResponse>>, t: Throwable) { // menampilkan pesan jika terjadi erorr
                 Toast.makeText(this@ProvinceActivity, "${t.message}", Toast.LENGTH_SHORT).show()
             }
 
