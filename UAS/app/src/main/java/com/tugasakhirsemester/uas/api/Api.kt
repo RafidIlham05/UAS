@@ -9,7 +9,9 @@ import retrofit2.http.GET
 interface Api {
     @GET("indonesia")
     fun getIndonesia(): Call<ArrayList<Indonesia>>
+    // memanggil data dari indonesia
 
     @GET("indonesia/provinsi")
     fun getProvince(): Call<ArrayList<ProvinceResponse>>
+    // memanggil data dari provinsi
 }
